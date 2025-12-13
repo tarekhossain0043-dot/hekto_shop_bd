@@ -14,6 +14,7 @@
   /* font */
   --font-josefin: "Josefin Sans", sans-serif;
   --font-lato: "Lato", sans-serif;
+  --shadow-primary: 0, 4px, 4px, 0, rgba(0, 0, 0, 0.25);
   /* universal  */
 }
 

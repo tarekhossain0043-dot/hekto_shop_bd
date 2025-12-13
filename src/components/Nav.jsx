@@ -57,16 +57,16 @@ const Nav = () => {
     },
   ];
   return (
-    <div className="mt-5 bg-transparent">
-      <div className="container px-4 md:px-6 lg:px-7 xl:px-8 flex items-center justify-between ">
+    <div className="mt-5 mb-5 bg-transparent">
+      <div className="container flex-1 px-4 md:px-6 lg:px-7 xl:px-8 flex items-center gap-10 justify-between ">
         {/* nav left */}
-        <div className="flex items-center gap-22">
+        <div className="flex w-full items-center gap-22 max-[300px]:gap-10">
           <Link to="/">
             <span className="text-[34px] font-bold text-secondary font-josefin capitalize hover:text-primary transition-all duration-300 ease-in-out">
               hekto
             </span>
           </Link>
-          <nav className="flex items-center gap-9 max-[926px]:hidden">
+          <nav className="flex flex-1 items-center gap-9 max-[880px]:hidden">
             {nav_menu.map((nav) => {
               const Icon = lucideIcon[nav.icon];
               return (
@@ -98,14 +98,32 @@ const Nav = () => {
             })}
           </nav>
           {/* toggle menu */}
-          <div>
+          <Link to="/menu-sidebar" className="min-[848px]:hidden flex-1 w-full">
             <lucideIcon.Menu className="w-5 h-5" />
-          </div>
+          </Link>
         </div>
 
         {/* nav right */}
         <div>
-          <SearchBar />
+          <div className="hidden md:block">
+            <SearchBar />
+          </div>
+          <div className="flex items-center gap-8 md:hidden">
+            {/* wishlist */}
+            <span className="capitalize max-[410px]:hidden flex items-center gap-2 cursor-pointer">
+              wishlist
+              <lucideIcon.Heart className="w-5 h-5" />
+            </span>
+            {/* cart */}
+            <Link to="/cart" className="relative block">
+              <lucideIcon.ShoppingCartIcon className="w-5 h-5" />
+              <div className="w-4 h-4 flex items-center justify-center leading-0 absolute text-xs -top-3 rounded-full right-0 bg-slate-600">
+                <span className="mt-0.5 text-center flex items-center justify-center">
+                  0
+                </span>
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

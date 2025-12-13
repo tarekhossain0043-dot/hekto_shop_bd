@@ -47,9 +47,9 @@ const Header = () => {
 
   return (
     <>
-      <div className="bg-head-bg py-3.5 hidden lg:block">
+      <div className="bg-head-bg py-3.5 max-[375px]:hidden">
         <div className="container">
-          <div className="flex flex-col lg:flex-row items-center justify-between text-head-txt text-[16px] font-semibold">
+          <div className="flex flex-col min-[880px]:flex-row items-center justify-between text-head-txt text-[16px] font-semibold">
             {/* left area */}
             <div className="flex items-center gap-12">
               <a
@@ -68,7 +68,7 @@ const Header = () => {
               </a>
             </div>
             {/* right area */}
-            <div className="flex items-center gap-4 justify-end">
+            <div className="flex max-[550px]:hidden items-center gap-4 justify-end">
               {/* lang */}
               <div className="relative w-20 cursor-pointer">
                 <span
