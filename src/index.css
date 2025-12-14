@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import "tailwindcss";
+@theme {
+  --color-hero-primary: #fb2e86;
+  --color-hero-bg: #f2f0ff;
+  --color-hero-black: #000;
+  --color-hero-text: #8a8fb9;
+}
+
+.hero-container {
+  max-width: 1176px;
+  width: 100%;
+  margin: auto;
+  padding: 0 1rem;
+}
