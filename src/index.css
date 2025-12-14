@@ -1,6 +1,15 @@
+
+/* google font like 'josefin sans,lato' */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import "tailwindcss";
+
+/* theme settings */
 @theme {
+  /* header */
+  --color-head-bg: #7e33e0;
+  --color-head-txt: #f1f1f1;
+  --color-border-clr: #e7e6ef;
+  /* hero */
   --color-hero-primary: #fb2e86;
   --color-hero-bg: #f2f0ff;
   --color-hero-black: #000;
@@ -8,13 +17,35 @@
 
   --font-hero-josefin: "Josefin Sans", sans-serif;
   --font-hero-lato: "Lato", sans-serif;
+  /* universal  */
+  --color-primary: #fb2e86;
+  --color-secondary: #0d0e43;
+  /* font */
+  --font-josefin: "Josefin Sans", sans-serif;
+  --font-lato: "Lato", sans-serif;
+  --shadow-primary: 0, 4px, 4px, 0, rgba(0, 0, 0, 0.25);
+  /* universal  */
 }
 
-.hero-container {
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+ /* hero style */
+ .hero-container {
   max-width: 1176px;
   width: 100%;
   margin: auto;
 }
 .hero_swiper .swiper {
   padding: 0 100px;
+/* container */
+.container,.hero-container {
+  max-width: 1176px;
+  margin: auto;
+  padding: 0 1rem;
+  width: 100%;
 }
