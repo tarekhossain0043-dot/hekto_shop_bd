@@ -5,11 +5,16 @@
   --color-hero-bg: #f2f0ff;
   --color-hero-black: #000;
   --color-hero-text: #8a8fb9;
+
+  --font-hero-josefin: "Josefin Sans", sans-serif;
+  --font-hero-lato: "Lato", sans-serif;
 }
 
 .hero-container {
   max-width: 1176px;
   width: 100%;
   margin: auto;
-  padding: 0 1rem;
+}
+.hero_swiper .swiper {
+  padding: 0 100px;
 }
