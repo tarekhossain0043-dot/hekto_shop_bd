@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Hero from "./components/Hero";
 import Modal from "./modals/Modal";
 import MenuSidebar from "./components/MenuSidebar";
 import SearchBar from "./components/SearchBar";
@@ -11,7 +12,7 @@ const App = () => {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home><Hero /><Home />} />
         <Route
           path="/menu-sidebar"
           element={
